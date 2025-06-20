@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn about Pick a Basket - our mission, products and how we bring people together through picnic baskets." />
+  <meta name="keywords" content="Pick a Basket, about us, picnic, couples, families, friends" />
+  <meta name="author" content="Dalindyebo Mdledle" />
+  <title>About Us | Pick a Basket</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <img src="Images/PaB Logo.jpg" alt="Pick a Basket Logo" />
+    <div id="menu-toggle">&#9776;</div>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="PickaBasket.html">Home</a></li>
+        <li><a href="About Us.html">About Us</a></li>
+        <li><a href="Service.html">Services</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="Enquiry.html">Enquiry</a></li>
+        <li><a href="SiteMap.html">SiteMap</a></li>
+      </ul>
+      <div class="search">
+        <input class="srch" type="search" placeholder="Type to search" />
+        <button class="btn">Search</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- About Content -->
+  <main class="offer">
+    <h1>About Us</h1>
+    <p>
+      At <strong>Pick a Basket</strong>, we offer picnic baskets filled with delicious treats, guaranteed to bring people closer.
+      Our baskets are for everyone: couples, families, and friends.
+    </p>
+    <p>
+      If you're a couple looking for a relaxing day out, our Lovers Baskets are specially designed to ignite sparks with carefully selected treats that find their way into your hearts.
+    </p>
+    <p>
+      Families of all shapes and sizes can indulge in our Family Baskets — perfect for parents, children, and loved ones.
+    </p>
+    <p>
+      And for friendships big and small, we offer joyful, shareable Friendship Baskets to help you create lasting memories together.
+    </p>
+  </main>
+
+  <!-- Embedded Video -->
+  <section class="video-section">
+    <h2>Watch Our Story</h2>
+    <iframe
+      width="100%"
+      height="315"
+      src="https://www.youtube.com/embed/7wtfhZwyrcc"
+      title="About Pick a Basket"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Back to Top">&uarr;</button>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Pick a Basket. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+  
+</body>
+</html>
