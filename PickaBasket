@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pick a Basket offers curated picnic baskets for couples, families, and friends in Soweto." />
+  <meta name="keywords" content="Picnic baskets, Pick a Basket, Soweto, Couples, Family picnic, Friendship baskets" />
+  <meta name="author" content="Dalindyebo Mdledle" />
+  <meta name="robots" content="index, follow" />
+  <title>Home | Pick a Basket</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <a href="PickaBasket.html">
+      <img src="Images/PaB Logo.jpg" alt="Pick a Basket company logo" />
+    </a>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="PickaBasket.html">Home</a></li>
+        <li><a href="About Us.html">About Us</a></li>
+        <li><a href="Service.html">Services</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="Enquiry.html">Enquiry</a></li>
+        <li><a href="SiteMap.html">SiteMap</a></li>
+      </ul>
+      <div class="search">
+        <input class="srch" type="search" placeholder="Type to search">
+        <button class="btn">Search</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <main>
+    <section class="main">
+      <div class="text">
+        <h1>Home</h1>
+        <h2>Welcome to Pick a Basket</h2>
+        <p>Bite, Sip, Laugh</p>
+      </div>
+    </section>
+
+    <!-- Offer Section -->
+    <section class="offer">
+      <h1>What we are all about</h1>
+      <p>Bringing people together.</p>
+      <div class="row">
+        <div class="get-this">
+          <h3>Couples Basket</h3>
+          <p>Love basket, designed to spark the heart. One bite is sure to give life to the romantic flame between two love birds.</p>
+        </div>
+        <div class="get-this">
+          <h3>Family Basket</h3>
+          <p>Specially constructed to bring loved ones closer.</p>
+        </div>
+        <div class="get-this">
+          <h3>Friendship Basket</h3>
+          <p>Designed to bring people together.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section class="shop">
+      <h1>Our Shop</h1>
+      <div class="shop-place">
+        <img src="Images/store.webp" alt="Soweto picnic basket store" />
+        <div class="layer">
+          <h3>Soweto</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- YouTube vid -->
+    <!--
+    <section class="video-section">
+      <h2>See How It Works</h2>
+      <iframe
+        width="100%"
+        height="315"
+        src="https://www.youtube.com/embed/7wtfhZwyrcc"
+        title="Intro Video - Pick a Basket"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </section>
+    -->
+
+    <!-- Back to Top -->
+    <button id="backToTop" title="Back to Top" style="position: fixed; bottom: 30px; right: 30px; background-color: #a7b600; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; display: none;">&uarr;</button>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Pick a Basket. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Back to top button
+    const backToTop = document.getElementById("backToTop");
+    window.onscroll = () => {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    };
+    backToTop.onclick = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
