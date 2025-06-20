@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Pick a Basket for inquiries about our picnic baskets, services, or customer support." />
+  <meta name="keywords" content="Pick a Basket, contact, picnic baskets, customer support, enquiry" />
+  <meta name="author" content="Dalindyebo Mdledle" />
+  <title>Contact | Pick a Basket</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="PickaBasket.html"><img src="Images/PaB Logo.jpg" alt="Pick a Basket Logo" /></a>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="PickaBasket.html">Home</a></li>
+        <li><a href="About Us.html">About Us</a></li>
+        <li><a href="Service.html">Services</a></li>
+        <li><a href="Contact.html" class="active">Contact</a></li>
+        <li><a href="Enquiry.html">Enquiry</a></li>
+        <li><a href="SiteMap.html">SiteMap</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="offer">
+    <h1>Contact Us</h1>
+    <p>If you have any questions or need assistance, please reach out to us below.</p>
+
+    <section style="max-width: 700px; margin: 0 auto; text-align: left;">
+      <form id="contactForm" action="mailto:Pick@Heart.org" method="POST" enctype="text/plain" novalidate>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Your full name" style="width: 100%; margin-bottom: 10px;" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com" style="width: 100%; margin-bottom: 10px;" />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10,15}" placeholder="Optional (10-15 digits)" style="width: 100%; margin-bottom: 10px;" />
+
+        <label for="type">Type of Message:</label>
+        <select id="type" name="type" required style="width: 100%; margin-bottom: 10px;">
+          <option value="">-- Select a Message Type --</option>
+          <option value="General Enquiry">General Enquiry</option>
+          <option value="Product Information">Product Information</option>
+          <option value="Feedback">Feedback</option>
+          <option value="Complaint">Complaint</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required minlength="10" placeholder="Write your message here..." style="width: 100%; height: 120px; margin-bottom: 15px;"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <div id="formMessage" class="form-feedback" style="margin-top: 10px;"></div>
+    </section>
+  </main>
+
+  <section class="video-section">
+    <h2>See What We're About</h2>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/7wtfhZwyrcc" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <button id="backToTop" title="Back to Top">↑</button>
+
+  <footer>
+    <p>&copy; 2025 Pick a Basket. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
