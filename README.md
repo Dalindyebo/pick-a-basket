@@ -2,7 +2,7 @@
 
 Welcome to **Pick a Basket** — a beautifully crafted website designed to offer delightful picnic basket options for couples, families, and friends.
 
-Live site: [https://dalindyebo.github.io](https://dalindyebo.github.io)
+Live site: https://dalindyebo.github.io/pick-a-basket/
 
 ---
 
